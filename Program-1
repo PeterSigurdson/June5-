@@ -43,10 +43,10 @@ namespace ConsoleApp3
             }
 
             // how to compare 2 arrays?
-
+            int z = Word2.Length;
             for (int j = 0; j < WordOneArray.Length; j++)
             {
-                if (WordOneArray[j] != WordTwoArray[j])
+                if (WordOneArray[j] != WordTwoArray[Word2.Length - z--])
                 {
                     YouWin = "You Lose!";
                     break;
@@ -58,3 +58,4 @@ namespace ConsoleApp3
     }
 
 }
+
